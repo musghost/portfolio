@@ -77,6 +77,9 @@ section{
   background: white;
   height: 120%;
   padding-top: 20%;
+  img{
+    max-width: 100%;
+  }
   .about-image{
     text-align: center;
   }
@@ -99,6 +102,7 @@ section{
 #skills{
   background: #2e353f;
   color: white;
+  height: 80%;
   /* MACBOOK */
   .notebook{
     float: left;
@@ -153,6 +157,83 @@ section{
         margin: 7px 0px 0px -10px;
         z-index: -1;
         border-radius: 100%;
+      }
+    }
+  }
+}
+
+
+#portfolio{
+  .project-column{
+    width: 33.3333333333%;
+    float: left;
+  }
+  .project{
+    padding: 4px;
+    background: #fff;
+    transition: all 0.2s ease-in-out;
+    margin: 20px 0;
+    img{
+      max-width: 100%;
+    }
+    .description{
+      padding: 0 10px;
+      h2{
+        font-weight: 100;
+      }
+    }
+    &:hover{
+      color: white;
+      transform: scale(1.03, 1.03);
+      position: relative;
+      z-index: 9;
+      cursor: pointer;
+    }
+    &.am{
+      &:hover{
+        background: #1a3779;
+      }
+    }
+    &.cc{
+      &:hover{
+        background: #ab826e;
+        color: #321818;
+      }
+    }
+    &.cm{
+      &:hover{
+        background: #00000e;
+        color: white;
+      }
+    }
+    &.rg{
+      &:hover{
+        background: #d41348;
+        color: white;
+      }
+    }
+    &.bs{
+      &:hover{
+        background: #d4739b;
+        color: white;
+      }
+    }
+    &.vo{
+      &:hover{
+        background: #373737;
+        color: white;
+      }
+    }
+    &.cp{
+      &:hover{
+        background: #cc3822;
+        color: white;
+      }
+    }
+    &.cl{
+      &:hover{
+        background: #3f5b81;
+        color: white;
       }
     }
   }
