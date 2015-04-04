@@ -55,6 +55,9 @@ body{
       font-size: 80px;
       height: 80px;
       margin: 0;
+      @media screen and (max-width: 767px){
+        font-size: 50px;
+      }
     }
   }
   .wrapper{
@@ -102,16 +105,29 @@ section{
 #skills{
   background: #2e353f;
   color: white;
-  height: 80%;
+  position: relative;
+
+  .icon-feature{
+    text-align: left;
+    font-size: 60px;
+  }
+  h2{
+    border-bottom: 1px solid #00FFD8;
+    padding-bottom: 4px;
+  }
   /* MACBOOK */
   .notebook{
-    float: left;
+    position: absolute;
+    right: 8%;
+    top: 50%;
+    transform: translateY(-50%);
     .screen{
       background: #fcfcfc;
       border-radius: 15px 15px 0 0;
       height: 185px;
       width: 280px;
       margin: 0 auto;
+      position: relative;
       &:before {
         content: "";
         position: absolute;
@@ -212,6 +228,13 @@ section{
     }
   }
 
+  @media screen and (max-width: 767px){
+    .notebook,
+    .icon-feature{
+      display: none;
+    }
+  }
+
 }
 
 
@@ -219,6 +242,12 @@ section{
   .project-column{
     width: 33.3333333333%;
     float: left;
+    @media screen and (max-width: 767px){
+      width: 100%;
+      img{
+        width: 100%;
+      }
+    }
   }
   .project{
     padding: 4px;
@@ -242,47 +271,71 @@ section{
       cursor: pointer;
     }
     &.am{
+      @media screen and (max-width: 767px){
+        border-bottom: 2px solid #1a3779;
+      }
       &:hover{
         background: #1a3779;
       }
     }
     &.cc{
+      @media screen and (max-width: 767px){
+        border-bottom: 2px solid #321818;
+      }
       &:hover{
         background: #ab826e;
         color: #321818;
       }
     }
     &.cm{
+      @media screen and (max-width: 767px){
+        border-bottom: 2px solid #00000e;
+      }
       &:hover{
         background: #00000e;
         color: white;
       }
     }
     &.rg{
+      @media screen and (max-width: 767px){
+        border-bottom: 2px solid #d41348;
+      }
       &:hover{
         background: #d41348;
         color: white;
       }
     }
     &.bs{
+      @media screen and (max-width: 767px){
+        border-bottom: 2px solid #d4739b;
+      }
       &:hover{
         background: #d4739b;
         color: white;
       }
     }
     &.vo{
+      @media screen and (max-width: 767px){
+        border-bottom: 2px solid #373737;
+      }
       &:hover{
         background: #373737;
         color: white;
       }
     }
     &.cp{
+      @media screen and (max-width: 767px){
+        border-bottom: 2px solid #cc3822;
+      }
       &:hover{
         background: #cc3822;
         color: white;
       }
     }
     &.cl{
+      @media screen and (max-width: 767px){
+        border-bottom: 2px solid #3f5b81;
+      }
       &:hover{
         background: #3f5b81;
         color: white;
