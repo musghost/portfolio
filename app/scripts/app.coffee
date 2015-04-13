@@ -1,5 +1,5 @@
 'use strict'
-
+skrollr.init()
 ###*
  # @ngdoc overview
  # @name portfolioApp
